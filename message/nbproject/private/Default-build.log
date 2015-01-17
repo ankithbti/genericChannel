@@ -1,0 +1,5 @@
+( cd src;make all )
+make[1]: Entering directory `/home/dev/svnProjects/myproject/messageApi/src'
+make[1]: *** No rule to make target `HttpServerMain.o', needed by `../bin/HttpServerBin'.  Stop.
+make[1]: Leaving directory `/home/dev/svnProjects/myproject/messageApi/src'
+make: *** [all] Error 2

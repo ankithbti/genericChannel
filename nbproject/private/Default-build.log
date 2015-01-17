@@ -1,0 +1,33 @@
+( cd message;make all )
+make[1]: Entering directory `/home/dev/svnProjects/myproject/genericChannel/message'
+( cd src;make all )
+make[2]: Entering directory `/home/dev/svnProjects/myproject/genericChannel/message/src'
+/usr/bin/g++ -g -O2 -std=c++11 -Wall -march=native -mtune=native -DOF_USING_GTK -pthread -D_REENTRANT -I../include -I/home/dev/boost/include -I/home/dev/svnProjects/myproject/xmlParserApi/include    -c -o MessageTest.o MessageTest.cpp
+/usr/bin/g++ -o ../bin/MessageApi  MessageTest.o /home/dev/boost/lib/libboost_thread.a /home/dev/boost/lib/libboost_system.a /home/dev/svnProjects/myproject/xmlParserApi/lib/libMessageApi.a 
+----------------------------
+Running the programme. 
+----------------------------
+../bin/MessageApi
+ Testing Message Api 
+ to get Value, str: att1value
+<root>
+<node1 att1=att1value att1=att1value>
+</node1 att1=att1value>
+<node2>
+Content2
+</node2>
+<node3>
+<node31>
+Content31
+</node31>
+</node3>
+</root>
+
+----------------------------
+make[2]: Leaving directory `/home/dev/svnProjects/myproject/genericChannel/message/src'
+make[1]: Leaving directory `/home/dev/svnProjects/myproject/genericChannel/message'
+( cd protocol;make all )
+make[1]: Entering directory `/home/dev/svnProjects/myproject/genericChannel/protocol'
+make[1]: *** No rule to make target `all'.  Stop.
+make[1]: Leaving directory `/home/dev/svnProjects/myproject/genericChannel/protocol'
+make: *** [all] Error 2
