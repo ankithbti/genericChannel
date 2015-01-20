@@ -28,6 +28,57 @@ make[2]: Leaving directory `/home/dev/svnProjects/myproject/genericChannel/messa
 make[1]: Leaving directory `/home/dev/svnProjects/myproject/genericChannel/message'
 ( cd protocol;make all )
 make[1]: Entering directory `/home/dev/svnProjects/myproject/genericChannel/protocol'
-make[1]: *** No rule to make target `all'.  Stop.
+( cd src;make all )
+make[2]: Entering directory `/home/dev/svnProjects/myproject/genericChannel/protocol/src'
+/usr/bin/g++ -g -O2 -std=c++11 -Wall -march=native -mtune=native -DOF_USING_GTK -pthread -D_REENTRANT -I../include -I/home/dev/boost/include -I/home/dev/svnProjects/myproject/xmlParserApi/include    -c -o MessageTest.o MessageTest.cpp
+/usr/bin/g++ -o ../bin/MessageApi  MessageTest.o /home/dev/boost/lib/libboost_thread.a /home/dev/boost/lib/libboost_system.a /home/dev/svnProjects/myproject/xmlParserApi/lib/libMessageApi.a 
+----------------------------
+Running the programme. 
+----------------------------
+../bin/MessageApi
+ Testing Protocol Api 
+----------------------------
+make[2]: Leaving directory `/home/dev/svnProjects/myproject/genericChannel/protocol/src'
 make[1]: Leaving directory `/home/dev/svnProjects/myproject/genericChannel/protocol'
-make: *** [all] Error 2
+( cd transport;make all )
+make[1]: Entering directory `/home/dev/svnProjects/myproject/genericChannel/transport'
+( cd src;make all )
+make[2]: Entering directory `/home/dev/svnProjects/myproject/genericChannel/transport/src'
+/usr/bin/g++ -g -O2 -std=c++11 -Wall -march=native -mtune=native -DOF_USING_GTK -pthread -D_REENTRANT -I../include -I/home/dev/boost/include -I/home/dev/svnProjects/myproject/xmlParserApi/include    -c -o MessageTest.o MessageTest.cpp
+/usr/bin/g++ -o ../bin/MessageApi  MessageTest.o /home/dev/boost/lib/libboost_thread.a /home/dev/boost/lib/libboost_system.a /home/dev/svnProjects/myproject/xmlParserApi/lib/libMessageApi.a 
+----------------------------
+Running the programme. 
+----------------------------
+../bin/MessageApi
+ Testing Transport Api 
+----------------------------
+make[2]: Leaving directory `/home/dev/svnProjects/myproject/genericChannel/transport/src'
+make[1]: Leaving directory `/home/dev/svnProjects/myproject/genericChannel/transport'
+( cd schemaAdaptor;make all )
+make[1]: Entering directory `/home/dev/svnProjects/myproject/genericChannel/schemaAdaptor'
+( cd src;make all )
+make[2]: Entering directory `/home/dev/svnProjects/myproject/genericChannel/schemaAdaptor/src'
+/usr/bin/g++ -g -O2 -std=c++11 -Wall -march=native -mtune=native -DOF_USING_GTK -pthread -D_REENTRANT -I../include -I/home/dev/boost/include -I/home/dev/svnProjects/myproject/xmlParserApi/include    -c -o MessageTest.o MessageTest.cpp
+/usr/bin/g++ -o ../bin/MessageApi  MessageTest.o /home/dev/boost/lib/libboost_thread.a /home/dev/boost/lib/libboost_system.a /home/dev/svnProjects/myproject/xmlParserApi/lib/libMessageApi.a 
+----------------------------
+Running the programme. 
+----------------------------
+../bin/MessageApi
+ Testing SchemaAdaptor Api 
+----------------------------
+make[2]: Leaving directory `/home/dev/svnProjects/myproject/genericChannel/schemaAdaptor/src'
+make[1]: Leaving directory `/home/dev/svnProjects/myproject/genericChannel/schemaAdaptor'
+( cd channel;make all )
+make[1]: Entering directory `/home/dev/svnProjects/myproject/genericChannel/channel'
+( cd src;make all )
+make[2]: Entering directory `/home/dev/svnProjects/myproject/genericChannel/channel/src'
+/usr/bin/g++ -g -O2 -std=c++11 -Wall -march=native -mtune=native -DOF_USING_GTK -pthread -D_REENTRANT -I../include -I/home/dev/boost/include -I/home/dev/svnProjects/myproject/xmlParserApi/include    -c -o MessageTest.o MessageTest.cpp
+/usr/bin/g++ -o ../bin/ChannelApi  MessageTest.o /home/dev/boost/lib/libboost_thread.a /home/dev/boost/lib/libboost_system.a /home/dev/svnProjects/myproject/xmlParserApi/lib/libMessageApi.a 
+----------------------------
+Running the programme. 
+----------------------------
+../bin/ChannelApi
+ Testing Channel Api 
+----------------------------
+make[2]: Leaving directory `/home/dev/svnProjects/myproject/genericChannel/channel/src'
+make[1]: Leaving directory `/home/dev/svnProjects/myproject/genericChannel/channel'

@@ -5,21 +5,22 @@
       <df name="channel">
         <df name="bin">
         </df>
-        <df name="include">
-        </df>
-        <df name="lib">
-        </df>
         <df name="src">
           <in>MessageTest.cpp</in>
+        </df>
+      </df>
+      <df name="common">
+        <df name="include">
+          <in>CommonTypeDefs.h</in>
+          <in>Constants.h</in>
         </df>
       </df>
       <df name="message">
         <df name="bin">
         </df>
         <df name="include">
+          <in>HtmlMessage.h</in>
           <in>Message.h</in>
-        </df>
-        <df name="lib">
         </df>
         <df name="src">
           <in>MessageTest.cpp</in>
@@ -28,20 +29,12 @@
       <df name="protocol">
         <df name="bin">
         </df>
-        <df name="include">
-        </df>
-        <df name="lib">
-        </df>
         <df name="src">
           <in>MessageTest.cpp</in>
         </df>
       </df>
       <df name="schemaAdaptor">
         <df name="bin">
-        </df>
-        <df name="include">
-        </df>
-        <df name="lib">
         </df>
         <df name="src">
           <in>MessageTest.cpp</in>
@@ -51,8 +44,8 @@
         <df name="bin">
         </df>
         <df name="include">
-        </df>
-        <df name="lib">
+          <in>HttpServerTransport.h</in>
+          <in>Transport.h</in>
         </df>
         <df name="src">
           <in>MessageTest.cpp</in>
