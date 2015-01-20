@@ -12,7 +12,7 @@ OF_INCLUDE_ROOT=/home/dev/Downloads/of_v0.8.4_linux64_release/libs/openFramework
 OF_EXTRA_INCLUDE_ROOT=/home/dev/Downloads/of_v0.8.4_linux64_release/libs
 XMLPARSER_ROOT=/home/dev/svnProjects/myproject/xmlParserApi
 
-SRCS= MessageTest.cpp
+SRCS= ChannelTest.cpp
 
 OBJS = $(patsubst %.cpp, %.o, $(SRCS))
 

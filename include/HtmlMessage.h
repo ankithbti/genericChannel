@@ -11,7 +11,7 @@
 #include "Message.h"
 #include <vector>
 
-namespace messageapi {
+namespace genericChannel {
     
     class HtmlMessage : public Message {
         

@@ -8,7 +8,9 @@
 #ifndef COMMONTYPEDEFS_H
 #define	COMMONTYPEDEFS_H
 
-namespace commonapi {
+#include <vector>
+
+namespace genericChannel {
     
     struct CommonTypeDefs {
         

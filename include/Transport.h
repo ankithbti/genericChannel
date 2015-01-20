@@ -9,20 +9,24 @@
 #define	TRANSPORT_H
 
 #include <boost/noncopyable.hpp>
+#include <boost/shared_ptr.hpp>
 #include <memory>
+#include <CommonTypeDefs.h>
 
-namespace transportapi {
+namespace genericChannel {
     
     class Transport : private boost::noncopyable {
         
     public:
         
-        typedef std::shared_ptr<Transport> Ptr ;
+        typedef boost::shared_ptr<Transport> Ptr ;
         
-        
-        
-        
-        
+        virtual void start() = 0 ;
+        virtual void stop() = 0 ;
+        virtual void send(const CommonTypeDefs::Buffer& buffer) = 0 ;
+        virtual ~Transport() {
+            
+        }
     };
     
 }

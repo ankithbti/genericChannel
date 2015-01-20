@@ -8,9 +8,15 @@
 #ifndef HTTPSERVERTRANSPORT_H
 #define	HTTPSERVERTRANSPORT_H
 
-namespace transportapi {
+#include <Transport.h>
+
+namespace genericChannel {
     
-    class HttpServerTransport {
+    class HttpServerTransport : public Transport {
+        
+    public:
+        
+        typedef boost::
         
     };
     
